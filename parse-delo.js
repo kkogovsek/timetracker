@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 require('colors')
 const { readFileSync } = require('fs')
 const [,, inputFile] = process.argv
