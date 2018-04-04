@@ -17,5 +17,5 @@ $ npm install --global git+https://git.smartis.si/kkogovsek/timetracker.git
 $ timetracker ./pot/do/datoteke
 ```
 
-#Demo time
+# Demo time
 ![Demo](demo.png)
