@@ -34,6 +34,6 @@ console.log(
   Object.entries(tags).sort(
     ([, t1], [, t2]) => t1 > t2 ? -1 : 1
   ).map(
-    ([tag, time]) => (`#${tag} `.yellow + displayTime(time))
+    ([tag, time]) => ('#' + `${tag} `.yellow + displayTime(time))
   ).join('\n')
 )
