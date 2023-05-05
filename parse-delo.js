@@ -17,7 +17,7 @@ lines.forEach(line => {
   const [, time, unit] = /(\d+)(min|h)/g.exec(line)
   const minutesSpent = Number(time) * (unit === 'h' ? 60 : 1)
   totalSpent += minutesSpent
-  line.replace(/#(\w+)/g, (_, tag) => {
+  line.replace(/#(\w+-)/g, (_, tag) => {
     tags[tag] = (tags[tag] || 0) + minutesSpent
   })
 })
