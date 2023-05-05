@@ -24,9 +24,9 @@ lines.forEach(line => {
 
 const displayTime = time => {
   if (time < 60) {
-    return `${time} min`
+    return `${time}min`
   } else {
-    return `${Math.floor(time / 60)} h ${time % 60} min`
+    return `${Math.floor(time / 60)}h ${time % 60}min`
   }
 }
 console.log(`Skupaj ${displayTime(totalSpent)}`.green)
